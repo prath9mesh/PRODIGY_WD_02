@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch by Prathamesh Shirdhankar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="light-mode" class="mode-btn">Light Mode</button>
+            <button id="dark-mode" class="mode-btn">Dark Mode</button>
+            <button id="export" class="export-btn">Export Data</button>
+        </div>
+        <div class="center-box">
+            <div class="stopwatch">
+                <div class="wrapper">
+                    <p>
+                        <span class="hour text" id="hour">00</span>
+                        <span>:</span>
+                        <span class="minute text" id="min">00</span>
+                        <span>:</span>
+                        <span class="seconds text" id="sec">00</span>
+                        <span>.</span>
+                        <span class="tens text" id="tens">00</span>
+                    </p>
+                </div>
+                <div class="buttons" id="btn-div">
+                    <button class="btn-start" id="start">START</button>
+                    <button class="btn-pause" id="pause">PAUSE</button>
+                    <button class="btn-reset" id="reset">RESET</button>
+                </div>
+                <ul class="laps" id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
